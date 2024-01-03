@@ -1,13 +1,61 @@
-body {
+body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+.photos-search-wrapper{
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+.photo-input-wrapper {
+  display: flex;
+  margin-bottom: 20px;
+}
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+button {
+  padding: 10px 15px;
+  background-color: #007FBD;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+button:hover {
+  background-color: #007FBD;
+}
+.search-image-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.search-image-box {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p {
+  padding: 10px;
+  margin: 0;
+  font-size: 14px;
+  color: #333;
 }
